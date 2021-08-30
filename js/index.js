@@ -11,7 +11,7 @@ const button = document.querySelector('button');
 
 button.addEventListener('click', function (event) {
 
-    if (document.querySelector('input').value != false){
+    if (document.querySelector('input').value !== ""){
 
         let li = document.createElement('li');
         li.innerHTML = document.querySelector('input').value;
@@ -19,5 +19,4 @@ button.addEventListener('click', function (event) {
         document.querySelector('input').value = '';
 
     } else alert('Сначала введите текст')
-
 });
